@@ -1,3 +1,9 @@
 .jumbotron{
 	text-align: center;
 }
+body {
+	background-color: #FDD7E4;
+}
+.playerConsole {
+  display: none;
+}
