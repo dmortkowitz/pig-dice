@@ -8,53 +8,55 @@
 <script src="js/scripts.js"></script>
 </head>
 <body>
-	<div class="start-menu container">
-		<div class="jumbotron">
-			<h1>Welcome to Pig Dice</h1>
-			<h3>Where the score is randomly generated</h3>
-			<h4>And the points don't matter anyway.</h4>
-			<h2>But if you still want to, let's play Pig Dice!</h2>
-		</div>
-		<div class="well">
-			<h4>This game takes place in the near future, where pigs have monopolized all gambling halls and replaced all other dice games with Pig Dice, where the goal is to get the highest score possible without rolling a 1.</h4><h3><strong>Please play responsibly</strong>, or the pig syndicate will leave us all <strong>bacon in the sun.</strong></h3>
-		</div>
-		<form id="playerOne">
-			<div class="form-group">
-				<label for="playerOne">What's your name, Player One?</label>
-				<input required class="playerOneName form-control" type="text">
-			</div>
-		</form>
-		<form id="playerTwo">
-	        <div class="form-group">
-	          <label for="playerTwoName">And yours, Player Two?</label>
-	          <input required class="playerTwoName form-control" type="text">
-	        </div>
-         </form>
-         <button id="start" class="btn btn-info">Press Start, if you're into that sort of thing</button>
-     </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Welcome to Pig Dice</h1>
+      <h3>Where the score is randomly generated</h3>
+      <h4>And the points don't matter anyway.</h4>
+      <h2>But if you still want to, let's play Pig Dice!</h2>
+    </div>
+    <div class="well">
+      <h4>This game takes place in the near future, where pigs have monopolized all gambling halls and replaced all other dice games with Pig Dice, where the goal is to get the highest score possible without rolling a 1.</h4><h3><strong>Please play responsibly</strong>, or the pig syndicate will leave us all <strong>bacon in the sun.</strong></h3>
+    </div>
+    <div class="startMenu">
+    <form id="playerOne">
+      <div class="form-group">
+        <label for="playerOneName">What's your name, Player One?</label>
+        <input required class="playerOneName form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="playerTwoName">And yours, Player Two?</label>
+        <input required class="playerTwoName form-control" type="text">
+      </div>
+
+     <button type="submit" id="start" class="btn btn-info">Press Start, if you're into that sort of thing</button>
+     </form>
+   </div>
+ </div>
      <br>
-	<div class="playerConsole container">
+  <div class="container">
+    <div class="playerConsole">
         <button id="newGame" class="btn btn-info">NEW GAME</button>
         <div class="row">
           <div class="col-md-6">
-            <h2>Player 1: <span id="player1Name"><span></h2>
+            <h2>Player 1: <span id="playerOneName"><span></h2>
               <button id="playerOneRoll" class="btn btn-danger">Roll</button>
               <button id="playerOneHold" class="btn btn-danger">Hold</button>
-            <h2>Dice Roll: <span id="dieRollOne"></span></h2>
+            <h2>Dice Roll: <span id="diceRollOne"></span></h2>
             <p>Round Total: <span id="roundTotalOne"></span></p>
-            <p>Total Score: <span id="totalScoreOne"></span></p>
+            <p>Total Score: <span id="cumeScoreOne"></span></p>
           </div>
 
         <div class="col-md-6">
-          <h2>Player 2: <span id="player2Name"><span></h2>
+          <h2>Player 2: <span id="playerTwoName"><span></h2>
             <button id="playerTwoRoll" class="btn btn-warning">Roll</button>
             <button id="playerTwoHold" class="btn btn-warning">Hold</button>
-            <h2>Dice Roll: <span id="dieRollTwo"></span></h2>
+            <h2>Dice Roll: <span id="diceRollTwo"></span></h2>
             <p>Round Total: <span id="roundTotalTwo"></span></p>
-            <p>Total Score: <span id="totalScoreTwo"></span></p>
+            <p>Total Score: <span id="cumeScoreTwo"></span></p>
         </div>
         </div>
       </div>
-
+    </div>
 </body>
 </html>
