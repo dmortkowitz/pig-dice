@@ -7,3 +7,11 @@ body {
 .playerConsole {
   display: none;
 }
+
+#msgCenter {
+	width: auto;
+	height: 250px;
+	background-color: gray;
+	color: white;
+	font-size: 25px;
+}
